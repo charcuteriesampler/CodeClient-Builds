@@ -1,0 +1,11 @@
+name: Build
+on: workflow_dispatch
+jobs:
+  build-the-thing:
+    runs-on: ubuntu-latest
+    container:
+      image: amazoncorretto:latest
+      options: --cpus 1
+    steps:
+      - name: hello_world
+        run: echo Hello World!
