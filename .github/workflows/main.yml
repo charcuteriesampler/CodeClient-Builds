@@ -8,4 +8,4 @@ jobs:
       options: --cpus 1
     steps:
       - name: hello_world
-        run: javac --version
+        run: git clone https://github.com/DFOnline/CodeClient.git && ls && pwd
