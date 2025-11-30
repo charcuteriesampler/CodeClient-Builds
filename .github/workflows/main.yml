@@ -7,5 +7,7 @@ jobs:
       image: amazoncorretto:latest
       options: --cpus 1
     steps:
-      - name: hello_world
+      - name: install_git
+        run: apt install git-all -y
+      - name: download_codeclient
         run: git clone https://github.com/DFOnline/CodeClient.git && ls && pwd
